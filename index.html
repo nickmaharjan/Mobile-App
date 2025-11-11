@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            align-items: center;
+        }
+        .Maharjan {
+            background-color: lightgray;
+            height: 200px;   
+            width: 400px;
+            padding: 10px;
+            align-items: center;
+        }
+        #id1 {
+            background-color: pink;
+        }
+        #id2 {
+            background-color: red;
+            color: white;
+        }
+
+
+        .Khanal {
+            width: 400px;
+            padding: 10px;
+            background-color: lightblue;
+            height: 200px;   
+        }
+        #id3 {
+            background-color: brown;
+            color: white;
+        }
+        #id4 {
+            background-color: black;
+        }
+
+        .Shrestha {
+            width: 400px;
+            padding: 10px;
+            background-color: lightgreen;
+            height: 200px;   
+        }
+        #id5 {
+            background-color: purple;
+            color: white;
+        }
+        #id6 {
+            background-color: orange;
+        }
+
+        .Bam {
+            width: 400px;
+            padding: 10px;
+            background-color: lightpink;
+            height: 200px;   
+        }
+        #id7 {
+            background-color: cyan;
+        }
+        #id8 {
+            background-color: magenta;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" id="ethnicity" placeholder="Enter 'Newar' or 'Non-Newar'">
+        <button onclick="ShowCaste()">Show Image</button>
+        <p id="message"></p>
+        <img id="displayImage" src="" alt="Result Image" width="300" style="display:none;">
+    </div>
+
+    <div class="Maharjan">
+        <div id="id1">
+            Nick Maharjan
+        </div>
+        <div id="id2">
+            Tisha Maharjan
+        </div>
+        <button onclick=backgroundChange()>Click</button>
+    </div>
+
+    <div class="Khanal">
+        <img src="images/IMG_4035.jpg" alt="chapal" width="100" height="100"> 
+        <div id="id3">
+            Utsukta Khanal
+        </div>
+        <div id="id4" style="color: white;">
+            Abiral Khanal
+        </div>
+        <button onclick=imageChange()>Click</button>
+    </div>
+
+    <div class="Shrestha">
+        <div id="id5">
+            Sagar Shrestha
+        </div>
+        <div id="id6">
+            Rija Shrestha
+        </div>
+        <p id="add"></p>
+        <button onclick=addition()>Add ME</button>
+
+        <p id="sub"></p>
+        <button onclick=subtraction()>Subtract ME</button>
+
+    </div>
+        <div class="Bam">
+        <div id="id7">
+            Sachin Bam
+        </div>
+        <div id="id8">
+            Niraj Bam
+        </div>
+        <p id="mul"></p>
+        <button onclick=multiplication()>Multiply ME</button>
+
+        <p id="div"></p>
+        <button onclick=division()>Divide ME</button>
+
+    </div>
+</body>
+<script src="myscript.js"></script>
+</html>
