@@ -1,17 +1,14 @@
-$(document).ready(function(){
-    $("#para1").click(function(){
-        $(this).hide();
-    });
-    $("#para2").hover(function(){
-        alert("No!");
-    });
-    $("#para3").hover(function(){
-        $(this).css("background-color", "pink");
-    });
-    $("#para4").click(function(){
-        $(this).css("font-size", "10px");
-    });
-    $("#para4").dblclick(function(){
-        $(this).css("font-size", "20px");
-    });
+$(document).ready(function () {
+  $("#first").click(function () {
+    $(this).animate(
+      {
+        fontSize: "40px",
+      },
+      1000,
+      function () {
+        $(this).css("color", "red");
+      }
+    );
+    $(this).fadeOut(500).fadeIn(500);
+  });
 });
