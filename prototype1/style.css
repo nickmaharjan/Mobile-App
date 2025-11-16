@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+.navbar {
+    background: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo {
+    height: 45px;
+}
+
+.hamburger {
+    display: none; 
+    flex-direction: column;
+    justify-content: space-between;
+    width: 28px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.hamburger div {
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    transition: color 0.2s;
+}
+
+.nav-menu li a:hover {
+    color: #4A90E2;
+}
+
+
+.main-section {
+    margin-top: 60px;
+    text-align: center;
+    padding: 40px;
+}
+
+.main-section h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.main-section p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.btn {
+    padding: 12px 22px;
+    font-size: 16px;
+    background: #4A90E2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #3b7ac2;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex; 
+    }
+
+    .nav-menu {
+        display: none; 
+        flex-direction: column;
+        background: white;
+        padding: 15px;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        width: 150px;
+        border-radius: 8px;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+
+    .nav-menu.show {
+        display: flex; 
+    }
+}
+
