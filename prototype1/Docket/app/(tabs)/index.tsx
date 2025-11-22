@@ -1,10 +1,9 @@
-import LoginCard from "./LoginCard";
+import Counter from "./CountAndModel";
 
 const App = () => {
   return (
-    <LoginCard />
+    <Counter/>
   );
 };
 
 export default App;
-
